@@ -5508,24 +5508,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Denisa Golache\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\pirla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart.UnitTests\\ShoppingCart.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.UnitTests\\ShoppingCart.UnitTests.csproj",
       "projectName": "ShoppingCart.UnitTests",
-      "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart.UnitTests\\ShoppingCart.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart.UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.UnitTests\\ShoppingCart.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Denisa Golache\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5590,7 +5585,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

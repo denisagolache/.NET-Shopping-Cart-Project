@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {}
+    "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\Application.csproj": {
+    "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\obj\\",
+        "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Denisa Golache\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj"
+              "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -90,25 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj": {
+    "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Denisa Golache\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,25 +147,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Denisa Golache\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,8 +176,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Domain\\Domain.csproj"
+              "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj"
               }
             }
           }
@@ -246,25 +234,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {
+    "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
+        "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
         "projectName": "ShoppingCart",
-        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
-        "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\obj\\",
+        "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
+        "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Denisa Golache\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -279,11 +263,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Application\\Application.csproj"
+              "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj"
               },
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -333,7 +317,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
