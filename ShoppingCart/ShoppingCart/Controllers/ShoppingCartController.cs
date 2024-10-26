@@ -32,5 +32,12 @@ namespace ShoppingCart.Controllers
         {
             return await mediator.Send(new GetShoppingCartQuery());
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await mediator.Send(new DeleteShoppingCartByIdCommand { Id = id });
+            return StatusCode(StatusCodes.Status204NoContent);
+        }
     }
 }

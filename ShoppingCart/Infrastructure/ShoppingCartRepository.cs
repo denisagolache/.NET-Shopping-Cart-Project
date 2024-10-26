@@ -21,9 +21,14 @@ namespace Infrastructure
             return shoppingCart.Id;
         }
 
-        public Task DeleteAsync(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var shoppingCart = await context.ShoppingCarts.FirstOrDefaultAsync(sC => sC.Id == id);
+            if (shoppingCart != null)
+            {
+                context.ShoppingCarts.Remove(shoppingCart);
+                await context.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<ShoppingCart>> GetAllAsync()
