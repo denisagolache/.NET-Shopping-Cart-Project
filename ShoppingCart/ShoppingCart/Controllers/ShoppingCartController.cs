@@ -1,5 +1,4 @@
-﻿using Application;
-using Application.Commands;
+﻿using Application.Commands;
 using Application.DTOs;
 using Application.Queries;
 using MediatR;
@@ -25,6 +24,17 @@ namespace ShoppingCart.Controllers
         {
             var id = await mediator.Send(command);
             return Ok(id);
+        }
+
+        [HttpGet("id")]
+        public async Task<ActionResult<ShoppingCartDto>> GetShoppingCartById(Guid id)
+        {
+            var cart =  await mediator.Send(new GetShoppingCartByIdQuery { Id = id });
+            if (cart == null)
+            {
+                return NotFound();
+            }
+            return cart;
         }
 
         [HttpGet]

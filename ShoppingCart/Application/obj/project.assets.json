@@ -919,19 +919,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pirla\\.nuget\\packages\\": {}
+    "C:\\Users\\ivrem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\obj\\",
+      "projectPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\ivrem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivrem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -946,11 +946,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj"
+            "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -1003,7 +1003,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

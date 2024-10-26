@@ -34,5 +34,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ShoppingCart.Controllers.ShoppingCartController",
+    "Method": "GetShoppingCartById",
+    "RelativePath": "api/ShoppingCart/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.DTOs.ShoppingCartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

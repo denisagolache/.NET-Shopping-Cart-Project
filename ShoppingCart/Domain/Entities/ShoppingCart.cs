@@ -1,7 +1,4 @@
-﻿
-using System.Data;
-
-namespace Domain.Entities
+﻿namespace Domain.Entities
 {
     public class ShoppingCart
     {

@@ -5508,19 +5508,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pirla\\.nuget\\packages\\": {}
+    "C:\\Users\\ivrem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\ShoppingCart.IntegrationTests.csproj",
+      "projectUniqueName": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\ShoppingCart.IntegrationTests.csproj",
       "projectName": "ShoppingCart.IntegrationTests",
-      "projectPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\ShoppingCart.IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\pirla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pirla\\Desktop\\.Net\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\obj\\",
+      "projectPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\ShoppingCart.IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\ivrem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivrem\\Source\\Repos\\.NET-Shopping-Cart-Project\\ShoppingCart\\ShoppingCart.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pirla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivrem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5585,7 +5585,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
