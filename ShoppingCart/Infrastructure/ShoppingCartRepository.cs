@@ -35,9 +35,9 @@ namespace Infrastructure
             return await context.ShoppingCarts.ToListAsync();
         }
 
-        public Task<ShoppingCart> GetByIdAsync(Guid id)
+        public async Task<ShoppingCart> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await context.ShoppingCarts.FindAsync(id);
         }
 
         public Task UpdateAsync(ShoppingCart shoppingCart)

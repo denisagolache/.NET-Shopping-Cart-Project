@@ -82,9 +82,9 @@ namespace ShoppingCartUnitTests
         private List<ShoppingCart> GenerateShoppingCarts()
         {
             // Arrange
-            return new List<ShoppingCart>
+            return new List<Domain.Entities.ShoppingCart>
         {
-            new ShoppingCart
+            new Domain.Entities.ShoppingCart
             {
                 Id = Guid.NewGuid(),
                 CreatedAt = DateTime.UtcNow,
@@ -92,7 +92,7 @@ namespace ShoppingCartUnitTests
                 TotalItems = 3,
                 TotalPrice = 150.00m
             },
-            new ShoppingCart
+            new Domain.Entities.ShoppingCart
             {
                 Id = Guid.NewGuid(),
                 CreatedAt = DateTime.UtcNow,

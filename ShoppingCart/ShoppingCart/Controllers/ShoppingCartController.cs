@@ -25,6 +25,17 @@ namespace ShoppingCartManagement.Controllers
             return Ok(id);
         }
 
+        [HttpGet("id")]
+        public async Task<ActionResult<ShoppingCartDto>> GetShoppingCartById(Guid id)
+        {
+            var cart =  await mediator.Send(new GetShoppingCartByIdQuery { Id = id });
+            if (cart == null)
+            {
+                return NotFound();
+            }
+            return cart;
+        }
+
         [HttpGet]
         public async Task<ActionResult<List<ShoppingCartDto>>> GetShoppingCarts()
         {
