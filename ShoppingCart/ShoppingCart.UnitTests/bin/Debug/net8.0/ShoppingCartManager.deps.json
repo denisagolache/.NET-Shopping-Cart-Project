@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "ShoppingCart/1.0.0": {
+      "ShoppingCartManager/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
           "Infrastructure": "1.0.0",
@@ -14,7 +14,7 @@
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "ShoppingCart.dll": {}
+          "ShoppingCartManager.dll": {}
         }
       },
       "AutoMapper/13.0.1": {
@@ -649,7 +649,7 @@
     }
   },
   "libraries": {
-    "ShoppingCart/1.0.0": {
+    "ShoppingCartManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

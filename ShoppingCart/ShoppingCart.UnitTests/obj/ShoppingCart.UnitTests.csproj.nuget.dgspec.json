@@ -285,8 +285,8 @@
               "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {
-                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj"
+              "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj": {
+                "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj"
               }
             }
           }
@@ -306,6 +306,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoBogus.NSubstitute": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -347,12 +355,12 @@
         }
       }
     },
-    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj": {
+    "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
-        "projectName": "ShoppingCart",
-        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
+        "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj",
+        "projectName": "ShoppingCartManager",
+        "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj",
         "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\obj\\",
         "projectStyle": "PackageReference",

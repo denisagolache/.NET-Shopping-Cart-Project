@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace ShoppingCart.Controllers
+namespace ShoppingCartManager.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

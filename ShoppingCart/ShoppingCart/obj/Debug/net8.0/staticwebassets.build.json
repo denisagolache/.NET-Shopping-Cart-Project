@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "jqFddmiAtkfGFZ+3JBnc83eIts3kBIqqQqmsXZYAGpU=",
-  "Source": "ShoppingCart",
-  "BasePath": "_content/ShoppingCart",
+  "Hash": "9zati0pEuoNAINm9MWfuITe50uM3mzS+OyeV9iRT7Bw=",
+  "Source": "ShoppingCartManager",
+  "BasePath": "_content/ShoppingCartManager",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

@@ -2793,9 +2793,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
-      "projectName": "ShoppingCart",
-      "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCart.csproj",
+      "projectUniqueName": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj",
+      "projectName": "ShoppingCartManager",
+      "projectPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\ShoppingCartManager.csproj",
       "packagesPath": "C:\\Users\\Denisa Golache\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Denisa Golache\\Documents\\GitHub\\.NET Shopping Cart Project\\ShoppingCart\\ShoppingCart\\obj\\",
       "projectStyle": "PackageReference",

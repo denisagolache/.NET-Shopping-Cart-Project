@@ -35,6 +35,8 @@ namespace Application.CommandHandlers
                 throw new ArgumentException("CreatedAt must be a valid date.", nameof(request.CreatedAt));
 
             var shoppingCart = mapper.Map<ShoppingCart>(request);
+            shoppingCart.Id = Guid.NewGuid(); 
+
             return await repository.AddAsync(shoppingCart);
         }
     }

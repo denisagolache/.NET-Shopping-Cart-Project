@@ -1,31 +1,23 @@
 ﻿using Application.Commands;
 using Application.CommandHandlers;
 using AutoMapper;
+using Domain.Entities;
 using Domain.Repositories;
-using Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
-using Application.Utils;
-using Infrastructure;
+using FluentAssertions;
+using NSubstitute;
+using Xunit;
 
-namespace ShoppingCart.UnitTests
+namespace ShoppingCartUnitTests
 {
-    public class CreateShoppingCartCommandTest
+    public class CreateShoppingCartCommandHandlerTests
     {
         private readonly IShoppingCartRepository repository;
         private readonly IMapper mapper;
-        private readonly ApplicationDbContext context;
 
-        public CreateShoppingCartCommandTest()
+        public CreateShoppingCartCommandHandlerTests()
         {
-            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: "ShoppingCart")
-                .Options;
-            context = new ApplicationDbContext(options);
-
-            repository = new ShoppingCartRepository(context);
-
-            var configuration = new MapperConfiguration(cfg => cfg.AddProfile(new MappingProfile()));
-            mapper = new Mapper(configuration);
+            repository = Substitute.For<IShoppingCartRepository>();
+            mapper = Substitute.For<IMapper>();
         }
 
         [Fact]
@@ -41,12 +33,25 @@ namespace ShoppingCart.UnitTests
             };
             var handler = new CreateShoppingCartCommandHandler(repository, mapper);
 
+            var shoppingCart = new ShoppingCart
+            {
+                Id = Guid.NewGuid(),
+                CreatedAt = command.CreatedAt,
+                Name = command.Name,
+                TotalItems = command.TotalItems,
+                TotalPrice = command.TotalPrice
+            };
+
+            mapper.Map<ShoppingCart>(command).Returns(shoppingCart);
+            repository.AddAsync(Arg.Any<ShoppingCart>()).Returns(shoppingCart.Id);
+
             // Act
             var result = await handler.Handle(command, CancellationToken.None);
 
             // Assert
-            Assert.NotEqual(Guid.Empty, result);
+            result.Should().NotBe(Guid.Empty, "a new shopping cart should have a valid non-empty Guid");
         }
+
 
         [Fact]
         public async Task Handle_ShouldThrowArgumentException_WhenNameIsEmpty()
@@ -115,7 +120,5 @@ namespace ShoppingCart.UnitTests
             // Act & Assert
             await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => handler.Handle(command, CancellationToken.None));
         }
-
-
     }
 }
