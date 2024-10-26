@@ -4,7 +4,7 @@ using Application.Commands;
 using Application.CommandHandlers;
 
 
-namespace ShoppingCartManagement.UnitTests
+namespace ShoppingCartUnitTests
 {
     public class DeleteShoppingCartByIdCommandHandlerTests
     {

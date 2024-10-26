@@ -7,58 +7,60 @@ using Domain.Repositories;
 using FluentAssertions;
 using NSubstitute;
 
-public class GetShoppingCartsQueryHandlerTests
+namespace ShoppingCartUnitTests
 {
-    private readonly IShoppingCartRepository repository;
-    private readonly IMapper mapper;
-
-    public GetShoppingCartsQueryHandlerTests()
+    public class GetShoppingCartsQueryHandlerTests
     {
-        repository = Substitute.For<IShoppingCartRepository>();
-        mapper = Substitute.For<IMapper>();
-    }
+        private readonly IShoppingCartRepository repository;
+        private readonly IMapper mapper;
 
-    [Fact]
-    public async Task Handle_ShouldReturnListOfShoppingCarts()
-    {
-        // Arrange
-        List<ShoppingCart> shoppingCarts = GenerateShoppingCarts();
-        repository.GetAllAsync().Returns(shoppingCarts);
-        var query = new GetShoppingCartQuery();
-        GenerateShoppingCartDTOs(shoppingCarts);
-        var handler = new GetShoppingCartsQueryHandler(repository, mapper);
+        public GetShoppingCartsQueryHandlerTests()
+        {
+            repository = Substitute.For<IShoppingCartRepository>();
+            mapper = Substitute.For<IMapper>();
+        }
 
-        // Act
-        var result = await handler.Handle(query, CancellationToken.None);
+        [Fact]
+        public async Task Handle_ShouldReturnListOfShoppingCarts()
+        {
+            // Arrange
+            List<ShoppingCart> shoppingCarts = GenerateShoppingCarts();
+            repository.GetAllAsync().Returns(shoppingCarts);
+            var query = new GetShoppingCartQuery();
+            GenerateShoppingCartDTOs(shoppingCarts);
+            var handler = new GetShoppingCartsQueryHandler(repository, mapper);
 
-        // Assert
-        Assert.NotNull(result);
-        Assert.Equal(shoppingCarts.Count, result.Count);
-        Assert.Equal(shoppingCarts.First().Id, result.First().Id);
-        Assert.Equal(shoppingCarts.First().Name, result.First().Name);
-        Assert.Equal(shoppingCarts.First().TotalItems, result.First().TotalItems);
-        Assert.Equal(shoppingCarts.First().TotalPrice, result.First().TotalPrice);
-        Assert.Equal(shoppingCarts.Last().Id, result.Last().Id);
-        Assert.Equal(shoppingCarts.Last().Name, result.Last().Name);
-        Assert.Equal(shoppingCarts.Last().TotalItems, result.Last().TotalItems);
-        Assert.Equal(shoppingCarts.Last().TotalPrice, result.Last().TotalPrice);
+            // Act
+            var result = await handler.Handle(query, CancellationToken.None);
 
-        // Fluent Assertions for additional verification
-        result.Should().NotBeNull();
-        result.Count.Should().Be(shoppingCarts.Count);
-        result.First().Id.Should().Be(shoppingCarts.First().Id);
-        result.First().Name.Should().Be(shoppingCarts.First().Name);
-        result.First().TotalItems.Should().Be(shoppingCarts.First().TotalItems);
-        result.First().TotalPrice.Should().Be(shoppingCarts.First().TotalPrice);
-        result.Last().Id.Should().Be(shoppingCarts.Last().Id);
-        result.Last().Name.Should().Be(shoppingCarts.Last().Name);
-        result.Last().TotalItems.Should().Be(shoppingCarts.Last().TotalItems);
-        result.Last().TotalPrice.Should().Be(shoppingCarts.Last().TotalPrice);
-    }
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(shoppingCarts.Count, result.Count);
+            Assert.Equal(shoppingCarts.First().Id, result.First().Id);
+            Assert.Equal(shoppingCarts.First().Name, result.First().Name);
+            Assert.Equal(shoppingCarts.First().TotalItems, result.First().TotalItems);
+            Assert.Equal(shoppingCarts.First().TotalPrice, result.First().TotalPrice);
+            Assert.Equal(shoppingCarts.Last().Id, result.Last().Id);
+            Assert.Equal(shoppingCarts.Last().Name, result.Last().Name);
+            Assert.Equal(shoppingCarts.Last().TotalItems, result.Last().TotalItems);
+            Assert.Equal(shoppingCarts.Last().TotalPrice, result.Last().TotalPrice);
 
-    private void GenerateShoppingCartDTOs(List<ShoppingCart> shoppingCarts)
-    {
-        mapper.Map<List<ShoppingCartDto>>(Arg.Any<List<ShoppingCart>>()).Returns(new List<ShoppingCartDto>
+            // Fluent Assertions for additional verification
+            result.Should().NotBeNull();
+            result.Count.Should().Be(shoppingCarts.Count);
+            result.First().Id.Should().Be(shoppingCarts.First().Id);
+            result.First().Name.Should().Be(shoppingCarts.First().Name);
+            result.First().TotalItems.Should().Be(shoppingCarts.First().TotalItems);
+            result.First().TotalPrice.Should().Be(shoppingCarts.First().TotalPrice);
+            result.Last().Id.Should().Be(shoppingCarts.Last().Id);
+            result.Last().Name.Should().Be(shoppingCarts.Last().Name);
+            result.Last().TotalItems.Should().Be(shoppingCarts.Last().TotalItems);
+            result.Last().TotalPrice.Should().Be(shoppingCarts.Last().TotalPrice);
+        }
+
+        private void GenerateShoppingCartDTOs(List<ShoppingCart> shoppingCarts)
+        {
+            mapper.Map<List<ShoppingCartDto>>(Arg.Any<List<ShoppingCart>>()).Returns(new List<ShoppingCartDto>
         {
             new ShoppingCartDto
             {
@@ -75,12 +77,12 @@ public class GetShoppingCartsQueryHandlerTests
                 TotalPrice = shoppingCarts.Last().TotalPrice
             }
         });
-    }
+        }
 
-    private List<ShoppingCart> GenerateShoppingCarts()
-    {
-        // Arrange
-        return new List<ShoppingCart>
+        private List<ShoppingCart> GenerateShoppingCarts()
+        {
+            // Arrange
+            return new List<ShoppingCart>
         {
             new ShoppingCart
             {
@@ -99,5 +101,6 @@ public class GetShoppingCartsQueryHandlerTests
                 TotalPrice = 250.00m
             }
         };
+        }
     }
 }
