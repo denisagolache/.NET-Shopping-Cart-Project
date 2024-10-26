@@ -1,13 +1,11 @@
-﻿using Application;
-using Application.Commands;
+﻿using Application.Commands;
 using Application.DTOs;
 using Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 
-
-namespace ShoppingCart.Controllers
+namespace ShoppingCartManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -31,6 +29,13 @@ namespace ShoppingCart.Controllers
         public async Task<ActionResult<List<ShoppingCartDto>>> GetShoppingCarts()
         {
             return await mediator.Send(new GetShoppingCartQuery());
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await mediator.Send(new DeleteShoppingCartByIdCommand { Id = id });
+            return StatusCode(StatusCodes.Status204NoContent);
         }
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart", "ShoppingCart\ShoppingCart.csproj", "{C3F569B1-AC70-4212-86D8-C2910A445071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartManagement", "ShoppingCart\ShoppingCartManagement.csproj", "{C3F569B1-AC70-4212-86D8-C2910A445071}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C7F19633-4662-4957-BAD3-16AD9A49D361}"
 EndProject
@@ -15,19 +15,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B1547082-0714-4DB8-8CF1-A2C16FC84C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{1F03972D-44C1-4D3C-BE61-47E4AE3928D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{1F03972D-44C1-4D3C-BE61-47E4AE3928D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{1ADA9EEF-AEE4-423C-A111-DE75E3A5861D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{1ADA9EEF-AEE4-423C-A111-DE75E3A5861D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D8F1ECAD-EC90-4967-92EB-15067A4D3081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D8F1ECAD-EC90-4967-92EB-15067A4D3081}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{91F5FFB8-230E-45B4-9DC2-0B3555C12146}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{B8631D09-2873-4B87-AD74-096EF93CD278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.IntegrationTests", "ShoppingCart.IntegrationTests\ShoppingCart.IntegrationTests.csproj", "{A7586CA2-805B-46A0-BEB7-47C13BD1D749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.IntegrationTests", "ShoppingCart.IntegrationTests\ShoppingCart.IntegrationTests.csproj", "{A7586CA2-805B-46A0-BEB7-47C13BD1D749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.UnitTests", "ShoppingCart.UnitTests\ShoppingCart.UnitTests.csproj", "{20F7FE1D-E815-4618-BE79-86C333585188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.UnitTests", "ShoppingCart.UnitTests\ShoppingCart.UnitTests.csproj", "{20F7FE1D-E815-4618-BE79-86C333585188}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
