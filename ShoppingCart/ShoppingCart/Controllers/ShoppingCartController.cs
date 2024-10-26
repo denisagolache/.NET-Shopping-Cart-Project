@@ -1,13 +1,11 @@
-﻿using Application;
-using Application.Commands;
+﻿using Application.Commands;
 using Application.DTOs;
 using Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 
-
-namespace ShoppingCart.Controllers
+namespace ShoppingCartManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

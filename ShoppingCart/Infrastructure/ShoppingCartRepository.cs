@@ -1,6 +1,5 @@
 ﻿using Domain.Entities;
 using Domain.Repositories;
-using System;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Persistence;
 
