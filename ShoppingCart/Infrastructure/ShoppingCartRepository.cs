@@ -26,9 +26,9 @@ namespace Infrastructure
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ShoppingCart>> GetAllAsync()
+        public async Task<IEnumerable<ShoppingCart>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await context.ShoppingCarts.ToListAsync();
         }
 
         public Task<ShoppingCart> GetByIdAsync(Guid id)
