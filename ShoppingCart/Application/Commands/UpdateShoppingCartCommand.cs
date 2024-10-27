@@ -1,6 +1,9 @@
-﻿namespace Application.Commands
+﻿using MediatR;
+
+namespace Application.Commands
 {
-    internal class UpdateShoppingCartCommand
+    public class UpdateShoppingCartCommand : CreateShoppingCartCommand, IRequest
     {
+        public Guid Id { get; set; }
     }
 }

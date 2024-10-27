@@ -1,11 +1,13 @@
-﻿using Application.Commands;
+﻿using Application;
+using Application.Commands;
 using Application.DTOs;
 using Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace ShoppingCartManagement.Controllers
+
+namespace ShoppingCart.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -25,28 +27,22 @@ namespace ShoppingCartManagement.Controllers
             return Ok(id);
         }
 
-        [HttpGet("id")]
-        public async Task<ActionResult<ShoppingCartDto>> GetShoppingCartById(Guid id)
-        {
-            var cart =  await mediator.Send(new GetShoppingCartByIdQuery { Id = id });
-            if (cart == null)
-            {
-                return NotFound();
-            }
-            return cart;
-        }
-
         [HttpGet]
         public async Task<ActionResult<List<ShoppingCartDto>>> GetShoppingCarts()
         {
             return await mediator.Send(new GetShoppingCartQuery());
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        [HttpPut("id")]
+        public async Task<IActionResult> UpdateShoppingCart(Guid id, UpdateShoppingCartCommand command)
         {
-            await mediator.Send(new DeleteShoppingCartByIdCommand { Id = id });
-            return StatusCode(StatusCodes.Status204NoContent);
+            if (id != command.Id)
+            {
+                return BadRequest("This should be identical with command id");
+            }
+            await mediator.Send(command);
+            return NoContent();
         }
+
     }
 }
