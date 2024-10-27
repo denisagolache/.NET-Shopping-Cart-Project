@@ -22,8 +22,23 @@ namespace Application.CommandHandlers
         }
         public Task Handle(UpdateShoppingCartCommand request, CancellationToken cancellationToken)
         {
+            if (string.IsNullOrWhiteSpace(request.Name))
+            {
+                throw new ArgumentException("Name cannot be empty");
+            }
+            if (request.TotalItems < 0)
+                throw new ArgumentOutOfRangeException(nameof(request.TotalItems), "TotalItems cannot be negative.");
+
+            if (request.TotalPrice < 0)
+                throw new ArgumentOutOfRangeException(nameof(request.TotalPrice), "TotalPrice cannot be negative.");
+
+            if (request.CreatedAt == default)
+                throw new ArgumentException("CreatedAt must be a valid date.", nameof(request.CreatedAt));
+
             var shoppingCart = mapper.Map<ShoppingCart>(request);
+            shoppingCart.Id = request.Id;
             return repository.UpdateAsync(shoppingCart);
+
         }
     }
 }
