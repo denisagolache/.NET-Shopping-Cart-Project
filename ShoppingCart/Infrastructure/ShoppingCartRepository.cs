@@ -42,7 +42,8 @@ namespace Infrastructure
 
         public Task UpdateAsync(ShoppingCart shoppingCart)
         {
-            throw new NotImplementedException();
+            context.Entry(shoppingCart).State = EntityState.Modified;
+            return context.SaveChangesAsync();
         }
     }
 }
