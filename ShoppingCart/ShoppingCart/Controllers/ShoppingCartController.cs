@@ -32,5 +32,17 @@ namespace ShoppingCart.Controllers
         {
             return await mediator.Send(new GetShoppingCartQuery());
         }
+
+        [HttpPut("id")]
+        public async Task<IActionResult> UpdateShoppingCart(Guid id, UpdateShoppingCartCommand command)
+        {
+            if (id != command.Id)
+            {
+                return BadRequest("This should be identical with command id");
+            }
+            await mediator.Send(command);
+            return NoContent();
+        }
+
     }
 }

@@ -11,6 +11,7 @@ namespace Application.Utils
         {
             CreateMap<ShoppingCart,ShoppingCartDto>().ReverseMap();
             CreateMap<CreateShoppingCartCommand,ShoppingCart>().ReverseMap();
+            CreateMap<UpdateShoppingCartCommand, ShoppingCart >().ReverseMap();
 
         }
     }
